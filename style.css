@@ -4,7 +4,76 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #6a1b9a;
+}
+
 body {
     min-height: 100dvh;
     min-width: 100dvw;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* HEADER STYLES */
+header {
+    height: 40px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.left_side {
+    padding-left: 15px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    font-size: 17.5px;
+    font-weight: 300;
+}
+.left_side svg {
+    width: 25px;
+}
+.sudokupad {
+    margin-left: 31px;
+    display: flex;
+    align-items: center;
+}
+.sudokupad a {
+    color: #fff;
+}
+.sudokupad img {
+    width: 28px;
+    height: 28px;
+    margin: 0 5px;
+    border-radius: 3px;
+}
+.sudokupad svg {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+.sudokupad:hover svg {
+    display: block;
+}
+
+.timer {
+    margin-right: 20px;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+}
+.timer button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+}
+.timer svg {
+    width: 20px;
+    height: 20px;
+}
+.timer svg:hover {
+    background-color: #eee;
+    border-radius: 5px;
 }
